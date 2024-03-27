@@ -1,0 +1,17 @@
+[
+    {
+        "question": "Quelle est la capitale de la France ?",
+        "options": ["Paris", "Londres", "Berlin", "Madrid"],
+        "correctAnswerIndex": 0,
+        "difficulty": "easy",
+        "category": "Géographie"
+    },
+    {
+        "question": "Qui a inventé la théorie de la relativité ?",
+        "options": ["Isaac Newton", "Albert Einstein", "Galilée", "Marie Curie"],
+        "correctAnswerIndex": 1,
+        "difficulty": "medium",
+        "category": "Science"
+    },
+    
+]
