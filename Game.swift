@@ -40,6 +40,7 @@ func loadQuestions(from file: String) -> [Question]? {
     }
 }
 
+
 // Utilisation :
 if let questions = loadQuestions(from: "questions") {
     // Utilisez les questions chargées ici
