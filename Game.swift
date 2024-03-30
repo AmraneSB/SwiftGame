@@ -93,3 +93,13 @@ func startGame() {
 }
 
 
+// Fonctions d'interface utilisateur et de manipulation des données à implémenter
+
+func getPlayerName() -> String {
+    print("Entrez votre nom:")
+    if let playerName = readLine() {
+        return playerName
+    } else {
+        return "Joueur"
+    }
+}
