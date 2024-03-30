@@ -129,3 +129,17 @@ func selectDifficulty() -> Difficulty {
     
     return difficulty ?? .medium
 }
+
+func loadQuestions(for difficulty: Difficulty) -> [Question]? {
+    guard let allQuestions = loadQuestions(from: "questions") else {
+        return nil
+    }
+    
+    let filteredQuestions = allQuestions.filter { $0.difficulty == difficulty }
+    
+    return filteredQuestions.isEmpty ? nil : filteredQuestions
+}
+
+func shuffleQuestions(_ questions: [Question]) -> [Question] {
+    return questions.shuffled()
+}
