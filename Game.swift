@@ -143,3 +143,24 @@ func loadQuestions(for difficulty: Difficulty) -> [Question]? {
 func shuffleQuestions(_ questions: [Question]) -> [Question] {
     return questions.shuffled()
 }
+
+func getUserAnswer(for question: Question) -> Int? {
+    print(question.question)
+    for (index, option) in question.options.enumerated() {
+        print("\(index + 1). \(option)")
+    }
+    
+    var userAnswer: Int?
+    var isValidInput = false
+    
+    repeat {
+        if let input = readLine(), let choice = Int(input), (1...question.options.count).contains(choice) {
+            userAnswer = choice - 1
+            isValidInput = true
+        } else {
+            print("Réponse invalide. Veuillez entrer le numéro correspondant à votre choix.")
+        }
+    } while !isValidInput
+    
+    return userAnswer
+}
