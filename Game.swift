@@ -103,3 +103,29 @@ func getPlayerName() -> String {
         return "Joueur"
     }
 }
+
+func selectDifficulty() -> Difficulty {
+    print("Sélectionnez le niveau de difficulté:")
+    print("1. Facile")
+    print("2. Moyen")
+    print("3. Difficile")
+    
+    var difficulty: Difficulty?
+    var isValidInput = false
+    
+    repeat {
+        if let input = readLine(), let choice = Int(input), (1...3).contains(choice) {
+            switch choice {
+                case 1: difficulty = .easy
+                case 2: difficulty = .medium
+                case 3: difficulty = .hard
+                default: break
+            }
+            isValidInput = true
+        } else {
+            print("Choix invalide. Veuillez entrer le numéro correspondant au niveau de difficulté.")
+        }
+    } while !isValidInput
+    
+    return difficulty ?? .medium
+}
