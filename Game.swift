@@ -164,3 +164,47 @@ func getUserAnswer(for question: Question) -> Int? {
     
     return userAnswer
 }
+
+
+func saveUserScore(playerName: String, score: Int, difficulty: Difficulty) {
+    let userScore = UserScore(playerName: playerName, score: score, difficulty: difficulty)
+    
+    // Charger les scores existants à partir du fichier
+    var scores = loadUserScores() ?? []
+    
+    // Ajouter le nouveau score à la liste
+    scores.append(userScore)
+    
+    // Convertir les scores en données JSON
+    let encoder = JSONEncoder()
+    encoder.outputFormatting = .prettyPrinted
+    
+    do {
+        let data = try encoder.encode(scores)
+        
+        // Enregistrer les données JSON dans un fichier
+        let fileURL = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            .appendingPathComponent("scores.json")
+        try data.write(to: fileURL)
+        
+        print("Score de \(playerName) enregistré: \(score) (Difficulté: \(difficulty.rawValue))")
+    } catch {
+        print("Erreur lors de l'enregistrement du score : \(error)")
+    }
+}
+
+func loadUserScores() -> [UserScore]? {
+    // Charger les données JSON à partir du fichier
+    let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+        .appendingPathComponent("scores.json")
+    
+    do {
+        let data = try Data(contentsOf: fileURL)
+        let decoder = JSONDecoder()
+        let scores = try decoder.decode([UserScore].self, from: data)
+        return scores
+    } catch {
+        print("Erreur lors du chargement des scores : \(error)")
+        return nil
+    }
+}
