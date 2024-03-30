@@ -51,3 +51,45 @@ if let questions = loadQuestions(from: "questions") {
 } else {
     print("Failed to load questions.")
 }
+
+func startGame() {
+    // Interface utilisateur pour saisir le nom et sélectionner le niveau de difficulté
+    let playerName = getPlayerName()
+    let difficulty = selectDifficulty()
+    
+    // Charger les questions en fonction du niveau de difficulté
+    guard let questions = loadQuestions(for: difficulty) else {
+        print("Failed to load questions.")
+        return
+    }
+    
+    // Mélanger les questions
+    let shuffledQuestions = shuffleQuestions(questions)
+    
+    var score = 0
+    
+    // Boucle à travers les questions
+    for question in shuffledQuestions {
+        // Afficher la question à l'utilisateur et obtenir sa réponse
+        let userAnswer = getUserAnswer(for: question)
+        
+        // Vérifier si la réponse est correcte et attribuer des points
+        if userAnswer == question.correctAnswerIndex {
+            score += 1
+            print("Correct!")
+        } else {
+            print("Incorrect.")
+        }
+        
+        // Afficher le score actuel de l'utilisateur
+        print("Score: \(score)")
+    }
+    
+    // Afficher le score final de l'utilisateur
+    print("Final score: \(score)")
+    
+    // Enregistrer le score de l'utilisateur
+    saveUserScore(playerName: playerName, score: score, difficulty: difficulty)
+}
+
+
