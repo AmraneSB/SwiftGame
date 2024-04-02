@@ -23,6 +23,7 @@ struct UserScore: Codable {
     let difficulty: Difficulty
 }
 
+// Fonction pour charger les questions
 func loadQuestions(from file: String) -> [Question]? {
     if let url = Bundle.main.url(forResource: file, withExtension: "json") {
         do {
@@ -41,21 +42,11 @@ func loadQuestions(from file: String) -> [Question]? {
 }
 
 
-// Utilisation :
-if let questions = loadQuestions(from: "questions") {
-    // Utilisez les questions chargées ici
-    for question in questions {
-        print(question.question)
-        // Traitez les questions comme vous le souhaitez
-    }
-} else {
-    print("Failed to load questions.")
-}
-
-
 
 // Fonctions d'interface utilisateur et de manipulation des données à implémenter
 
+
+// Fonction Nom du Joueur
 func getPlayerName() -> String {
     print("Entrez votre nom:")
     if let playerName = readLine() {
@@ -65,6 +56,7 @@ func getPlayerName() -> String {
     }
 }
 
+// Fonction Sélection de la difficulté
 func selectDifficulty() -> Difficulty {
     print("Sélectionnez le niveau de difficulté:")
     print("1. Facile")
@@ -91,6 +83,8 @@ func selectDifficulty() -> Difficulty {
     return difficulty ?? .medium
 }
 
+
+// Fonction Chargement des Questions en rapport avec la difficulté
 func loadQuestions(for difficulty: Difficulty) -> [Question]? {
     guard let allQuestions = loadQuestions(from: "questions") else {
         return nil
@@ -101,10 +95,14 @@ func loadQuestions(for difficulty: Difficulty) -> [Question]? {
     return filteredQuestions.isEmpty ? nil : filteredQuestions
 }
 
+
+// Fonction Mélange des Questions 
 func shuffleQuestions(_ questions: [Question]) -> [Question] {
     return questions.shuffled()
 }
 
+
+// Fonction Récuperation de la réponse du Joueur
 func getUserAnswer(for question: Question) -> Int? {
     print(question.question)
     for (index, option) in question.options.enumerated() {
@@ -126,7 +124,7 @@ func getUserAnswer(for question: Question) -> Int? {
     return userAnswer
 }
 
-
+// Fonction Sauvegarde du Score du Joueur
 func saveUserScore(playerName: String, score: Int, difficulty: Difficulty) {
     let userScore = UserScore(playerName: playerName, score: score, difficulty: difficulty)
     
@@ -154,6 +152,8 @@ func saveUserScore(playerName: String, score: Int, difficulty: Difficulty) {
     }
 }
 
+
+// Fonction Chargement du Score du Joueur
 func loadUserScores() -> [UserScore]? {
     // Charger les données JSON à partir du fichier
     let fileURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
@@ -170,6 +170,7 @@ func loadUserScores() -> [UserScore]? {
     }
 }
 
+// Fonction Affichage de la Question
 func displayQuestion(_ question: Question) {
     print(question.question)
     for (index, option) in question.options.enumerated() {
@@ -177,6 +178,8 @@ func displayQuestion(_ question: Question) {
     }
 }
 
+
+// Fonction Retour de la réponse
 func displayFeedback(_ isCorrect: Bool) {
     if isCorrect {
         print("Correct!")
@@ -185,12 +188,13 @@ func displayFeedback(_ isCorrect: Bool) {
     }
 }
 
+// Fonction Score Final
 func displayFinalScore(_ score: Int) {
     print("Votre score final est de \(score) points.")
 }
 
 
-
+// Fonction Lancement du Jeu
 func startGame() {
     // Interface utilisateur pour saisir le nom et sélectionner le niveau de difficulté
     let playerName = getPlayerName()
