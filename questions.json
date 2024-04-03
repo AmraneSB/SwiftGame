@@ -1,17 +1,102 @@
 [
     {
-        "question": "Quelle est la capitale de la France ?",
-        "options": ["Paris", "Londres", "Berlin", "Madrid"],
+        "question": "Quel est le nom de la technique signature de Goku ?",
+        "options": ["Kamehameha", "Makankosappo", "Masenko", "Garlick Gun"],
         "correctAnswerIndex": 0,
         "difficulty": "easy",
-        "category": "Géographie"
+        "category": "DB"
     },
     {
-        "question": "Qui a inventé la théorie de la relativité ?",
-        "options": ["Isaac Newton", "Albert Einstein", "Galilée", "Marie Curie"],
+        "question": "Quel est le nom en français donné aux fameuses Dragon Ball ?",
+        "options": ["Les balles du dragon", "Les boules du dragon", "Les boules de cristals", "Les boules de verres"],
+        "correctAnswerIndex": 2,
+        "difficulty": "easy",
+        "category": "DB"
+    },
+    {
+        "question": "Combien de Saiyan sont censés être en vie selon Radditz ?",
+        "options": ["3", "4", "2", "5"],
+        "correctAnswerIndex": 1,
+        "difficulty": "easy",
+        "category": "DB"
+    },
+    {
+        "question": "Quel est la famille de jeu de mot autour des prénoms des Saiyans ?",
+        "options": ["Les légummes", "Les fruits", "Les sous-vétements", "Les plats japonaiss"],
+        "correctAnswerIndex": 0,
+        "difficulty": "easy",
+        "category": "DB"
+    },
+    {
+        "question": "Quel est le prénom Saiyan de Goku ?",
+        "options": ["Karotto", "Cachalotto", "Cachalot", "Kakarotto"],
+        "correctAnswerIndex": 3,
+        "difficulty": "easy",
+        "category": "DB"
+    },
+    {
+        "question": "Qui est Baddack pour Goten ?",
+        "options": ["Karotto", "Cachalotto", "Son Arrière Grand Père", "Son Grand Père"],
+        "correctAnswerIndex": 3,
+        "difficulty": "easy",
+        "category": "DB"
+    },
+
+
+
+
+    {
+        "question": "Qui a inventé le Mafuba ?",
+        "options": ["Tsurusennin", "Mutaito", "Kamesennin", "Grand Père Son Gohan"],
         "correctAnswerIndex": 1,
         "difficulty": "medium",
-        "category": "Science"
+        "category": "DB"
     },
-   
+    {
+        "question": "Quelle est la contre partie lors de l'utilisation du Mafuba ?",
+        "options": ["La mort", "Un évanouissement soudain", "Perte de puissance momentanée", "Perte de contrôle de son ki"],
+        "correctAnswerIndex": 0,
+        "difficulty": "medium",
+        "category": "DB"
+    },
+    {
+        "question": "Face à Freezer, Goku pousse son Kaioken jusqu'à quelle niveau ?",
+        "options": ["X10", "X15", "X30", "X20"],
+        "correctAnswerIndex": 3,
+        "difficulty": "medium",
+        "category": "DB"
+    },
+    {
+        "question": "Combien de fois la Terre à été détruite dans Dragon Ball ?",
+        "options": ["1", "2", "3", "4"],
+        "correctAnswerIndex": 0,
+        "difficulty": "medium",
+        "category": "DB"
+    },
+    
+
+
+
+
+    {
+        "question": "Combien de Cell JR. ont été créer par Cell ?",
+        "options": ["8", "5", "6", "7"],
+        "correctAnswerIndex": 3,
+        "difficulty": "hard",
+        "category": "DB"
+    },
+    {
+        "question": "Combien de voeux on été effectuer par Shenron en comptant Dragon Ball et Dragon Ball Z ?",
+        "options": ["13", "15", "10", "8"],
+        "correctAnswerIndex": 2,
+        "difficulty": "hard",
+        "category": "DB"
+    },
+    {
+        "question": "De quelle type de série japonaise sont issus le Commando Ginyu ?",
+        "options": ["Les yokai", "Les kaiju", "Les tokusatsu", "Les super sentai"],
+        "correctAnswerIndex": 3,
+        "difficulty": "hard",
+        "category": "DB"
+    }
 ]
