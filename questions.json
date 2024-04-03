@@ -36,8 +36,36 @@
     },
     {
         "question": "Qui est Baddack pour Goten ?",
-        "options": ["Karotto", "Cachalotto", "Son Arrière Grand Père", "Son Grand Père"],
+        "options": ["Un guerrier d'élite", "Un simple Saiyan", "Son Arrière Grand Père", "Son Grand Père"],
         "correctAnswerIndex": 3,
+        "difficulty": "easy",
+        "category": "DB"
+    },
+    {
+        "question": "Qui a écrit Dragon Ball ?",
+        "options": ["Akira Kushida", "Akira Toriyama", "Kentaro Miura", "Masako Nozawa"],
+        "correctAnswerIndex": 1,
+        "difficulty": "easy",
+        "category": "DB"
+    },
+    {
+        "question": "De qui Goku a t-il apprit le Kamehameha ?",
+        "options": ["Mutaito", "Yamcha", "Kamesennin", "Grand Père Son Gohan"],
+        "correctAnswerIndex": 2,
+        "difficulty": "easy",
+        "category": "DB"
+    },
+    {
+        "question": "Qui est le second élève de Kamesenin ?",
+        "options": ["Krilin", "Goku", "Yamcha", "Lunch"],
+        "correctAnswerIndex": 0,
+        "difficulty": "easy",
+        "category": "DB"
+    },
+    {
+        "question": "Avec quelle technique Goku achève t'il Kid Buu ?",
+        "options": ["L'Ultra Kamehameha", "Le Super Genkidama", "Le Kaioken X100", "La Lumière Infini"],
+        "correctAnswerIndex": 0,
         "difficulty": "easy",
         "category": "DB"
     },
@@ -73,8 +101,48 @@
         "difficulty": "medium",
         "category": "DB"
     },
-    
-
+    {
+        "question": "Qui est le célèbre doubleur Japonais qui prète sa voix à Goku ?",
+        "options": ["Ryo Saeba", "Tetsuo Hara", "Masako Nozawa", "Nanami Keisuke"],
+        "correctAnswerIndex": 2,
+        "difficulty": "medium",
+        "category": "DB"
+    },
+    {
+        "question": "Qui est le célèbre doubleur Francais qui prète sa voix à Goku (Petit) ?",
+        "options": ["Eric Legrand", "Brigitte Lecordier", "Donald Reignoux", "Stéphane Excoffier"],
+        "correctAnswerIndex": 1,
+        "difficulty": "medium",
+        "category": "DB"
+    },
+    {
+        "question": "Au début de Dragon Ball, Goku pèche comment ?",
+        "options": ["Avec sa queue", "Une canne à pèche", "Une ficelle", "Un filet"],
+        "correctAnswerIndex": 0,
+        "difficulty": "medium",
+        "category": "DB"
+    },
+    {
+        "question": "Comment Goku appelle le Cyborg n°8 ?",
+        "options": ["Hachan", "C-8", "8", "Cychan"],
+        "correctAnswerIndex": 0,
+        "difficulty": "medium",
+        "category": "DB"
+    },
+    {
+        "question": "Comment ce nomme le baton magique de Goku en Japonais ?",
+        "options": ["Murasaki", "Shinshin", "Sutikku", "Nyoibo"],
+        "correctAnswerIndex": 3,
+        "difficulty": "medium",
+        "category": "DB"
+    },
+    {
+        "question": "Comment ce nomme le nuage magique de Goku en Japonais ?",
+        "options": ["Arashi", "Sukōru", "Kinto un", "Kumo"],
+        "correctAnswerIndex": 2,
+        "difficulty": "medium",
+        "category": "DB"
+    },
 
 
 
@@ -95,6 +163,55 @@
     {
         "question": "De quelle type de série japonaise sont issus le Commando Ginyu ?",
         "options": ["Les yokai", "Les kaiju", "Les tokusatsu", "Les super sentai"],
+        "correctAnswerIndex": 3,
+        "difficulty": "hard",
+        "category": "DB"
+    },
+    {
+        "question": "En quelle an commence le manga Dragon Ball(au sein de l'inivers Dragon Ball) ?",
+        "options": ["1051", "749", "257", "1984"],
+        "correctAnswerIndex": 1,
+        "difficulty": "hard",
+        "category": "DB"
+    },
+    {
+        "question": "En quelle année a été écrit le manga Dragon Ball ?",
+        "options": ["1984", "1982", "1981", "1983"],
+        "correctAnswerIndex": 0,
+        "difficulty": "hard",
+        "category": "DB"
+    },
+    {
+        "question": "Dans quelle magazine japonais hebdomadaire Dragon Ball était-il prépublié ?",
+        "options": ["Giga Jump", "Weekly Shonen Magazine", "Weekly Shonen Jump", "Saikyo No Jump"],
+        "correctAnswerIndex": 2,
+        "difficulty": "hard",
+        "category": "DB"
+    },
+    {
+        "question": "Comment ce nomme le peuple qui ont appris la téléportation instantané à Goku ?",
+        "options": ["Yadrat", "Yardrat", "Ratdrat", "Yardat"],
+        "correctAnswerIndex": 1,
+        "difficulty": "hard",
+        "category": "DB"
+    },
+    {
+        "question": "Dans la salle de l'esprit et du temps, 1 minutes à l'extérieur équivaut à combien de temps dedans ?",
+        "options": ["6 heures", "1 heures", "1 journée", "12 heures"],
+        "correctAnswerIndex": 0,
+        "difficulty": "hard",
+        "category": "DB"
+    },
+    {
+        "question": "Quelle âge a Trunks lors de sa première rencontre dans le passé ?",
+        "options": ["17 ans", "18 ans", "19 ans", "21 ans"],
+        "correctAnswerIndex": 0,
+        "difficulty": "hard",
+        "category": "DB"
+    },
+    {
+        "question": "Quelle est le seul moyen de repoussé un Genkidama ?",
+        "options": ["La force brut", "Une aura maléfique", "Une décharge de ki immense", "Un coeur pur"],
         "correctAnswerIndex": 3,
         "difficulty": "hard",
         "category": "DB"
